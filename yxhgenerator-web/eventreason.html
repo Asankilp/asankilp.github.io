@@ -6,6 +6,29 @@
 <body>
 <h1>营销号生成器</h1>
 <p>事件主体</p>
-<input type="text" name="master" id="master" value="">
+<input type="text" name="master" id="master" value="" />
+  <p>事件</p>
+  <input type="text" name="event" id="event" value="" />
+  <p>解释</p>
+  <input type="text" name="reason" id="reason" value="" />
+  <button onclick="gen()">生成</button>
+  <p>输出</p>
+  <textarea name="output" id="output"></textarea>
+  <script>
+			function gen() {
+				var master = document.getElementById("master").value;
+				var event = document.getElementById("event").value;
+				var reason = document.getElementById("reason").value;
+				//				console.log(main);
+				//				console.log(sth);
+				//				console.log(other);
+				var output = "\t" + master + event + "是怎么回事呢？" + master + "相信大家都很熟悉，但是" + master + event + "是怎么回事呢，下面就让小编带大家一起了解吧。\r\n\t"　　
+				reason += master + event + "，其实就是" + reason + "，大家可能会很惊讶 " + master + "怎么会" + event + "呢？但事实就是这样，小编也感到非常惊讶。\r\n\t"　　
+				reason += "这就是关于" + master + event + "的事情了，大家有什么想法呢，欢迎在评论区告诉小编一起讨论哦！"
+				console.log(output)
+				//				document.getElementById("txt").valueOf(str)
+				document.getElementById("output").value = output
+			}
+  </script>
 </body>
 </html>
