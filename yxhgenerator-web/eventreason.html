@@ -13,14 +13,14 @@
   <input type="text" name="reason" id="reason" value="" />
   <button onclick="gen()">生成</button>
   <p>输出</p>
-  <textarea name="output" id="output" style="width: 100%;"></textarea>
+  <textarea name="output" id="output" style="width: 50%;height: 30%"></textarea>
   <script>
 			function gen() {
 				var master = document.getElementById("master").value;
 				var event = document.getElementById("event").value;
 				var reason = document.getElementById("reason").value;
 				
-				var output = "\t" + master + event + "是怎么回事呢？" + master + "相信大家都很熟悉，但是" + master + event + "是怎么回事呢，下面就让小编带大家一起了解吧。\n" + "\t" + master + event + "，其实就是" + reason + "，大家可能会很惊讶 " + master + "怎么会" + event + "呢？但事实就是这样，小编也感到非常惊讶。\n" + "\t" + "这就是关于" + master + event + "的事情了，大家有什么想法呢，欢迎在评论区告诉小编一起讨论哦！"
+				var output = "\t" + master + event + "是怎么回事呢？" + master + "相信大家都很熟悉，但是" + master + event + "是怎么回事呢，下面就让小编带大家一起了解吧。\n" + "\t" + master + event + "，其实就是" + reason + "，大家可能会很惊讶，" + master + "怎么会" + event + "呢？但事实就是这样，小编也感到非常惊讶。\n" + "\t" + "这就是关于" + master + event + "的事情了，大家有什么想法呢，欢迎在评论区告诉小编一起讨论哦！"
 				console.log(output)
 				document.getElementById("output").value = output
 			}
