@@ -45,14 +45,16 @@
 		</div>
   <script>
 			function gen() {
-				var channel = document.getElementById("channel").value;
-				var realm = document.getElementById("realm").value;
-				var item = document.getElementById("item").value;
-        var looks = document.getElementById("looks").value;
-        var features1 = document.getElementById("features1").value;
-        var features2 = document.getElementById("features2").value;
+				var channelvar2 = document.getElementById("channel").value;
+				var realmvar1 = document.getElementById("realm").value;
+				var itemvar1= document.getElementById("item").value;
+        var looksvar1 = document.getElementById("looks").value;
+        var featuresvar1_1 = document.getElementById("features1").value;
+        var featuresvar1_2 = document.getElementById("features2").value;
 				
-				var output = "\t" + "大家好，我是" + channel + "，随着社会的发展，我国科技事业不断壮大，综合国力不断发展，取得了举世瞩目的成就，今天我们就来谈谈" + realm + "\n" + "\t" + "我国最近研发出了一款" + item + ",它" + looks + "，" + features1 + "。大家可能会惊讶他能" + features2 + "呢，小编也是非常惊讶呢。\n" + "\t" + "这就是关于" + item + "的介绍了，如果想了解更多" + realm + "的事情，欢迎点赞收藏关注哦。"
+				var output = "\t" + "大家好，我是" + channelvar2 + "，随着社会的发展，我国科技事业不断壮大，综合国力不断发展，取得了举世瞩目的成就，今天我们就来谈谈" + realmvar1 + "\n"
+                + "\t" + "我国最近研发出了一款" + itemvar1 + ",它" + looksvar1 + "，" + featuresvar1_1 + "。大家可能会惊讶他能" + featuresvar1_2 + "呢，小编也是非常惊讶呢。\n"
+                + "\t" + "这就是关于" + itemvar1 + "的介绍了，如果想了解更多" + realmvar1 + "的事情，欢迎点赞收藏关注哦。";
 				console.log(output)
 				document.getElementById("output").value = output
 			}
