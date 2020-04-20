@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>营销号生成器-Web</title>
+</head>
+<body>
+	<DIV style="text-align:center; ">
+<h1>营销号生成器</h1>
+	<a href="./eventreason">事件解释类型</a>
+	<a href="./waiguoren">外国小哥类型</a>
+	<a href="./keyanchuangxin">科研创新类型</a>
+	<b>教程类型</b>
+		
+	<hr>
+        </div>
+        <DIV style="font-size:9pt; ">
+        <p>频道名</p>
+        <input type="text" name="channel" id="channel" value="营销号爱发明" />
+        <p>制作物品</p>
+        <input type="text" name="item" id="item" value="" />
+        <p>过程形容词</p>
+        <input type="text" name="guocheng1" id="guocheng1" value="" />
+        <p>过程</p>
+        <textarea name="guocheng2" id="guocheng2" style="height: 86px;" ></textarea>
+        <p></p>
+        <button id="btn" onclick="gen()">生成</button>
+        <style>
+            #btn { 
+         color: #FFFFFF;
+         border-radius:10px;
+         width:80px;  height:5px;  
+         background:linear-gradient(to right, #757575,#212121);
+         opacity:0.5;
+         width: 50px; 
+         height:30px; 
+         display: block;
+         background-color:transparent;
+      }
+          </style>
+          <p>输出</p>
+          <textarea name="output" id="output" style="width: 20%;height: 100px"></textarea>
+        </DIV>
+        <script>
+            function gen() {
+                var channel = document.getElementById("channel").value;
+                var item = document.getElementById("item").value;
+                var guocheng1 = document.getElementById("guocheng1").value;
+                var guocheng2 = document.getElementById("guocheng2").value;
+                var output = "\t" + "大家好，我是" + channel + ",今天我来教大家制作" + item + "。\n"
++ "\t" + "做" + item + "是一个" + guocheng1 + "的过程。" + guocheng2 + "。是不是很" + guocheng1 + "呢？\n"
++ "\t" + "好了，今天的节目就到这里，我是" + channel + "，下期再见。"
+            }
+        </script>
+</body>
+</html>
